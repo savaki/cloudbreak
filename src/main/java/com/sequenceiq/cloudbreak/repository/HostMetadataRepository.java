@@ -11,4 +11,6 @@ public interface HostMetadataRepository extends CrudRepository<HostMetadata, Lon
 
     Set<HostMetadata> findHostsInHostgroup(@Param("hostGroup") String hostGroup, @Param("clusterId") Long clusterId);
 
+    Set<HostMetadata> findHostsInCluster(@Param("clusterId") Long clusterId);
+
 }
